@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Andrés Calamaro - Sitio Web </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../estilos.css">  
+</head>
+   
+<body>
+    
+    <header id="header">
+        <div class="container-nav">
+            <a class="logo" href="../index.html">Andrés Calamaro</a>
+            <nav class="navigation">
+               <ul>
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="biografia.html">Biografia</a></li>
+                  <li><a href="discografia.html">Discografia</a></li>
+                  <li><a href="recitales.html">Proximos Recitales</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+               </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <section class="formulario">
+        <h3 class="contactanos">¡CONTACTANOS!</h3>
+        <form action="contacto.html" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                <br>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+                <br>
+                <br>
+                <label for="e-mail">E-Mail</label>
+                <input type="text" name="e-mail" id="e-mail" placeholder="Ingresa tu e-mail">
+                <br>
+                <br>
+                <div>
+                <label for="asunto">Asunto</label>
+                <select name="Asunto">
+                    <option value="Entradas">Entradas</option>
+                    <option value="Shows">Shows</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <br>
+                    <textarea name="mensaje" id="mensaje" rows="10" maxlength="500" cols="100"></textarea>
+                </div>
+                <br>
+                <br>
+                <div>He leido y acepto la Politica de privacidad
+                <input type="checkbox" name="acepta" value="1"> 
+                </div>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </fieldset>
+        </form>
+        <div class="info-sitio">
+        <p>Este sitio web no es el oficial, se hizo con fines de aprendizaje y motivacion</p>
+        <p>Desarrollador: Santiago Burke</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+         <p>© Todos los derechos reservados 2022</p>
+         <a href="./sections/contacto.html">Contacto</a>
+         <a href="https://facebook.com/andrescalamarooficial" target="_blank">Facebook</a>
+         <a href="https://twitter.com/calamarooficial" target="_blank">Twitter</a>
+         <a href="https://youtube.com/CanalCalamaro" target="_blank">Youtube</a>
+         <a href="https://instagram.com/a_calamaro" target="_blank">Instagram</a>
+         <a href="https://open.spotify.com/artist/3tAICgiSR5PfYY4B8qsoAU" target="_blank">Spotify</a>
+        </div>
+    </footer>
+</body>   
+
+</html>

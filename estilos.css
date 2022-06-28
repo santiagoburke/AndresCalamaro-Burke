@@ -1,0 +1,462 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.774);
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#header { 
+    grid-area: header;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    margin-bottom: 30px;
+    height: 250px;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.container-nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.main {
+    display: flex;
+    grid-area: main-info;
+    margin-top: 50px;
+}
+
+.main h3 {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.main-info {
+    width: 50%;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#imagen-main {
+    display: flex;
+    grid-area: imagen-prin;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+  
+#header {
+    grid-area: header;
+}
+
+section#comienzos {
+    grid-area: comienzos;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.info-comienzos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-comienzos h3 {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+section#primera-banda {
+    grid-area: primera-banda;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.info-primera h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section#segunda-banda {
+    grid-area: segunda-banda;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.info-segunda h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section#tercera-banda {
+    grid-area: tercera-banda;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.info-tercera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-tercera p {
+    margin: 30px;
+}
+
+#footer {
+    grid-area: footer; 
+}
+
+.discografia-div h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.discografia-div p {
+    margin: 10px 15px 10px 15px;
+}
+
+.discografia table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-recitales {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    grid-area: titulo-recitales;
+}
+
+.titulo-proximosr span {
+    font-style: italic;
+}
+
+.contenedor-proximosr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-proximosr a {
+    text-decoration: none;
+}
+
+.primer-recital {
+    border: 1px solid black;
+    width: 98%;
+    margin-bottom: 10px;
+    grid-area: primer-recital;
+}
+
+.primer-recital a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.primer-recital p, h4 {
+    padding: 5px;
+}
+
+.segundo-recital {
+    border: 1px solid black;
+    width: 98%;
+    margin-bottom: 10px;
+    grid-area: segundo-recital;
+}
+
+.segundo-recital a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.segundo-recital p, h4 {
+    padding: 5px;
+}
+
+.tercer-recital {
+    border: 1px solid black;
+    width: 98%;
+    margin-bottom: 10px;
+    grid-area: tercer-recital;
+}
+
+.tercer-recital a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tercer-recital p, h4 {
+    padding: 5px;
+}
+
+.cuarto-recital {
+    border: 1px solid black;
+    width: 98%;
+    margin-bottom: 10px;
+    grid-area: cuarto-recital;
+}
+
+.cuarto-recital a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cuarto-recital p, h4 {
+    padding: 5px;
+}
+
+.quinto-recital {
+    border: 1px solid black;
+    width: 98%;
+    margin-bottom: 10px;
+    grid-area: quinto-recital;
+}
+
+.quinto-recital a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quinto-recital p, h4 {
+    padding: 5px;
+}
+
+.contactanos {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.info-sitio p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    grid-area: footer;
+}
+
+.container-footer {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.container-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* PRIMER GRID */
+
+#grid-index {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main-info"
+    "imagen-prin"
+    "footer";
+    grid-template-rows: 150px auto auto 100px;
+    grid-template-columns: 100%;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 100vh;
+    }
+
+
+/* SEGUNDO GRID CON MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    #grid-index {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main-info"
+        "imagen-prin"
+        "footer";
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .main h3 {
+        display: flex;
+        text-align: center;
+        font-size: 30px;
+        justify-content: center;
+        padding-top: 0px;
+    }    
+    #header {
+        padding: 25px;
+        height: 120px;
+    }
+    .container-footer a {
+        padding: 2px;
+    }
+}
+
+/* TERCER GRID CON MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+    #grid-index {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "imagen-prin main-info"
+        "footer footer";
+        grid-template-columns: 45% auto;
+        grid-column-gap: 5px;
+    } 
+    .calamaro-imagen {
+        width: 500px;
+        height: auto;
+    }   
+}
+
+/* CUARTO GRID */
+
+#grid-bio {
+    display: grid;
+    grid-template-areas:
+    "header" 
+    "comienzos"
+    "primera-banda"
+    "segunda-banda"
+    "tercera-banda"
+    "footer";
+    grid-template-rows: 150px auto auto auto auto 100px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 100vh; 
+}  
+
+/* QUINTO GRID CON MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    #grid-bio {
+        display: grid;
+        grid-template-areas:
+        "header" 
+        "comienzos"
+        "primera-banda"
+        "segunda-banda"
+        "tercera-banda"
+        "footer";
+        grid-template-rows: 150px auto auto auto auto 100px;
+        grid-row-gap: 5px;
+        width: 100%;
+        height: 100vh; 
+}
+.logo {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+.info-comienzos h3 {
+    padding-top: 0px;
+}
+.container-footer a {
+    padding: 2px;
+}
+}
+
+/* SEXTO GRID CON MEDIA QUERIES */
+
+@media screen and (min-width: 1200px) {
+    #grid-bio {
+        display: grid;
+        grid-template-areas:
+        "header header" 
+        "comienzos primera-banda"
+        "comienzos segunda-banda"
+        "tercera-banda tercera-banda"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 150px auto auto auto 100px;
+        grid-column-gap: 5px;
+}
+    section#tercera-banda {
+        flex-direction: row;
+    }
+}
+
+/* SEPTIMO GRID */
+
+#grid-recitales {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titulo-recitales"
+    "primer-recital"
+    "segundo-recital"
+    "tercer-recital"
+    "cuarto-recital"
+    "quinto-recital"
+    "footer";
+    grid-template-rows: 150px auto auto auto auto auto auto 100px;
+    grid-row-gap: 5px;
+    width: 100%;
+    height: 100vh;
+}
