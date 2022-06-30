@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1REM = 10px */
-    min-height: 100%;
+    height: 100%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -14,6 +14,13 @@ body {
     line-height: 20px;
     margin: 0;
     margin-bottom: 40px;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: calc(100% - 81px);
+    position: relative;
+    padding-bottom: 81px;
 }
 
 #header { 
@@ -60,43 +67,8 @@ body {
     padding: 10px 15px;
 }
 
-.main {
-    display: flex;
-    grid-area: main-info;
-    margin-top: 50px;
-}
-
-.main h3 {
-    display: flex;
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 30px;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-.main-info {
-    width: 50%;
-    margin: 0 auto;
-    gap: 0;
-}
-
-.main-div {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-#imagen-main {
-    display: flex;
-    grid-area: imagen-prin;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-}
-  
-#header {
-    grid-area: header;
+#content {
+    padding-bottom: 81px;
 }
 
 section#comienzos {
@@ -290,11 +262,13 @@ section#tercera-banda {
     padding: 10px;
     width: 100%;
     bottom: 0;
-    height: 100px;
+    height: 81px;
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 0;
 }
 
 .container-footer {
