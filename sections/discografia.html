@@ -3,15 +3,21 @@
 <head>
     <title> Andrés Calamaro - Sitio Web </title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos.css">
 </head>
    
-<body>       
+<body>
+<div id="wrapper">
+    <div class="container-fluid">
+    <div class="row">       
     <header id="header">
         <div class="container-nav">
-            <a class="logo" href="../index.html">Andrés Calamaro</a>
-            <nav class="navigation">
+            <a class="logo col-6" href="../index.html">Andrés Calamaro</a>
+            <nav class="navigation col-6">
                <ul>
                   <li><a href="../index.html">Inicio</a></li>
                   <li><a href="biografia.html">Biografia</a></li>
@@ -22,69 +28,165 @@
             </nav>
         </div>    
     </header>
+    </div>
+    </div>
 
-    <section class="discografia">
-        <div class="discografia-div">
-            <h3>SU DISCOGRAFIA</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, velit a eaque architecto ipsa eum ad praesentium? Iure placeat unde laudantium id quae quod consequuntur ducimus fugiat! Officia a eum aperiam sapiente dolorem eius nobis necessitatibus. Tenetur autem, dolorem officiis dolores aperiam quo illum pariatur voluptates aliquid odio incidunt voluptatum, saepe minima praesentium atque reprehenderit aut ab quos eum ipsum officia non accusantium recusandae. Ad praesentium sequi quidem perferendis, dolores ipsam, fugiat voluptatum odit quod porro tenetur corporis blanditiis dolorum beatae temporibus consectetur adipisci quae necessitatibus dolore. Atque qui ad cum minima, necessitatibus culpa tempore sapiente reprehenderit, deleniti officia natus.
-            </p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <img src="https://i.discogs.com/6Ctp_iZ7Q8GnBHyoq52T4BGOZ3PFyIhWR_YHjvLOxlk/rs:fit/g:sm/q:90/h:401/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk4NTc3/MS0xNTY3NTg2MDE4/LTc0MDQuanBlZw.jpeg" class="img-responsive center-block">
         </div>
-        <table border="1" cellpadding="8" cellspacing="1">
-            <tr>
-                <th>Nombre del Disco</th>
-                <th>Fecha de Publicacion</th>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-            <tr>
-                <td>lorem</td>
-                <td>lorem</td>
-            </tr>
-        </table> 
+    </div>
+
+    <section class="container">
+        <div class="row justify-content-center mt-5" class="titulo-disco">
+            <h1>Andrés Calamaro<small>Discografia</small></h1>
+        </div>
     </section>
 
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-3 col-sm-3 col-md-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2018/11/cargar440.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">CARGAR LA SUERTE<br>(2018)</h4>
+                  <p class="text-center">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Ver album completo
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
+                            <li class="list-group-item">1. Verdades afiladas</li>
+                            <li class="list-group-item">2. Transito lento</li>
+                            <li class="list-group-item">3. Cuarteles de invierno</li>
+                            <li class="list-group-item">4. Diego Armando canciones</li>
+                            <li class="list-group-item">5. Las rimas</li>
+                            <li class="list-group-item">6. Siete vidas</li>
+                            <li class="list-group-item">7. Mi ranchera</li>
+                            <li class="list-group-item">8. Falso LV</li>
+                            <li class="list-group-item">9. My mafia</li>
+                            <li class="list-group-item"> 10. Adan rechaza</li>
+                            <li class="list-group-item"> 11. Egoistas</li>
+                            <li class="list-group-item">12. Voy a volver</li>
+                          </ul>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              </div> 
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2017/03/Cy9TRh7XEAE4KD6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">VOLUMEN 11<br>(2016)</h4>
+                  <p class="text-center">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Ver album completo
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
+                            <li class="list-group-item">1. Apocalipsis en Malasaña</li>
+                            <li class="list-group-item">1. Frio y barro (segunda parte)</li>
+                            <li class="list-group-item">3. Rock y juventud</li>
+                            <li class="list-group-item">4. Tan triste no es el blues</li>
+                            <li class="list-group-item">5. La noche</li>
+                            <li class="list-group-item">6. Atunes y ballenas</li>
+                            <li class="list-group-item">7. Como el viento voy a ver</li>
+                            <li class="list-group-item">8. Mareo</li>
+                            <li class="list-group-item">9. El huevo y la gallina</li>
+                            <li class="list-group-item"> 10. Blues de Santa Fe</li>
+                            <li class="list-group-item"> 11. Las almas agradecidas</li>
+                            <li class="list-group-item">12. Vampiro torero</li>
+                            <li class="list-group-item">13. Pánico en Benidorm</li>
+                            <li class="list-group-item">14. Cazador de ateos</li>
+                            <li class="list-group-item">15. Hasta el cielo</li>
+                            <li class="list-group-item">16. Blues y orquesta</li>
+                            <li class="list-group-item">17. Que te vaya bonito</li>
+                            <li class="list-group-item">18. Trujillo Libre</li>
+                            <li class="list-group-item">19. La Burra</li>
+                          </ul>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              </div> 
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2013/10/bohemio.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">BOHEMIO<br>(2013)</h4>
+                  <p class="text-center">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Ver album completo
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
+                            <li class="list-group-item">1. Belgrano</li>
+                            <li class="list-group-item">2. Cuando no estas </li>
+                            <li class="list-group-item">3. Tantas Veces </li>
+                            <li class="list-group-item">4. Rehenes</li>
+                            <li class="list-group-item">5. Nacimos para correr</li>
+                            <li class="list-group-item">6. Bohemio</li>
+                            <li class="list-group-item">7. Plástico fino</li>
+                            <li class="list-group-item">8. Inexplicable </li>
+                            <li class="list-group-item">9. Dentro de una cancion </li>
+                            <li class="list-group-item">10. Doce pasos</li>
+                          </ul>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              </div> 
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2013/10/ontherock2010.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">ON THE ROCK<br>(2010)</h4>
+                  <p class="text-center">
+                    <a class="btn btn-primary" type="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Ver album completo
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
+                            <li class="list-group-item">1. Barcos </li>
+                            <li class="list-group-item">2. Te extraño </li>
+                            <li class="list-group-item">3. El pasodoble de los amigos ausentes </li>
+                            <li class="list-group-item">4. Todos se van </li>
+                            <li class="list-group-item">5. Los divinos </li>
+                            <li class="list-group-item">6. Flor de Samurai </li>
+                            <li class="list-group-item">7. Insoportablemente cruel </li>
+                            <li class="list-group-item">8. Tres Marias </li>
+                            <li class="list-group-item">9. Te solté la rienda </li>
+                            <li class="list-group-item">10. Me envenenaste </li>
+                            <li class="list-group-item">11. Gomontonera </li>
+                            <li class="list-group-item">12. El perro</li>
+                          </ul>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              </div> 
+        </div>
+    </div>
+</section>
+
+<div class="row align-content-center">
+    <div class="container-fluid">
     <footer class="footer">
         <div class="container-footer">
          <p>© Todos los derechos reservados 2022</p>
@@ -95,7 +197,11 @@
          <a href="https://instagram.com/a_calamaro" target="_blank">Instagram</a>
          <a href="https://open.spotify.com/artist/3tAICgiSR5PfYY4B8qsoAU" target="_blank">Spotify</a>
         </div>
-    </footer>        
+    </footer>   
+    </div> 
+</div>
+</div>
+  
 </body>   
 
 </html>
