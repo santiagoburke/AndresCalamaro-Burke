@@ -71,6 +71,49 @@ body {
     padding-bottom: 81px;
 }
 
+.main {
+    display: flex;
+    grid-area: main-info;
+    margin-top: 50px;
+    animation-duration: 3s;
+    animation-name: respawn;
+}
+
+.main h3 {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.main-info {
+    width: 50%;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#imagen-main {
+    display: flex;
+    grid-area: imagen-prin;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: respawn;
+}
+  
+#header {
+    grid-area: header;
+}
+
 section#comienzos {
     grid-area: comienzos;
     display: flex;
