@@ -339,6 +339,7 @@ section#tercera-banda {
     text-align: center;
     text-decoration: none;
     color: white;
+    transition: background-color 2s;
 }
 
 .container-footer a {
@@ -358,6 +359,10 @@ section#tercera-banda {
     100% {
         opacity: 100;
     }
+}
+
+.container-footer a:hover {
+    background-color: black;
 }
 
 /* PRIMER GRID */
