@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.btn-primary {
+    @extend .btn;
+    background-color: $color-background;
+    border-color: $color-white;
+    color: $color-black;
+}
+
+.btn-secondary {
+    @extend .btn;
+    background-color: $color-background;
+    border-color: $color-black;
+    color: $color-white;
+}
+
+@mixin a-link($font-color, $background-color, $font-size) {
+    background-color: $background-color;
+    color: $font-color;
+    font-size: $font-size;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.a-link-redes {
+    @include a-link(white, rgb(63, 63, 63), 1rem)
+}
