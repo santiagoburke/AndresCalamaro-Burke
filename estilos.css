@@ -20,7 +20,6 @@ body {
 #wrapper {
     min-height: calc(100% - 81px);
     position: relative;
-    padding-bottom: 81px;
 }
 
 #header { 
@@ -28,8 +27,14 @@ body {
     background-color: rgb(63, 63, 63);
     color: white;
     margin-bottom: 30px;
-    height: 250px;
+    height: 128px;
     width: 100%;
+}
+
+#header .container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #header a {
@@ -37,21 +42,15 @@ body {
     text-decoration: none;
 }
 
-.logo {
+a .logo {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 15px;
     transition: font-size 1s;
 }
 
-.logo:hover {
+a .logo:hover {
     font-size: 25px;
-}
-
-.container-nav { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .navigation {
@@ -73,55 +72,16 @@ body {
     transition: background-color 1s;
 }
 
+.container-nav {
+    margin: 40px;
+}
+
 .navigation ul li a:hover {
     background-color: black;
 }
 
 #content {
     padding-bottom: 81px;
-}
-
-.main {
-    display: flex;
-    grid-area: main-info;
-    margin-top: 50px;
-    animation-duration: 3s;
-    animation-name: respawn;
-}
-
-.main h3 {
-    display: flex;
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 30px;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-.main-info {
-    width: 50%;
-    margin: 0 auto;
-    gap: 0;
-}
-
-.main-div {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-#imagen-main {
-    display: flex;
-    grid-area: imagen-prin;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    animation-duration: 3s;
-    animation-name: respawn;
-}
-  
-#header {
-    grid-area: header;
 }
 
 section#comienzos {
@@ -189,6 +149,10 @@ section#tercera-banda {
     margin: 30px;
 }
 
+h2 {
+    text-align: center;
+}
+
 .btn-primary {
     background-color: rgb(63, 63, 63);
     border-color: white;
@@ -200,125 +164,90 @@ section#tercera-banda {
     box-shadow: none;
 }
 
-#footer {
-    grid-area: footer; 
-}
-
 .titulo-disco {
     margin-top: 5px;
 }
 
-.titulo-recitales {
+.proximos-recitales {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: 20px;
-    grid-area: titulo-recitales;
+    font-size: 1.5rem;
+}
+
+.titulo-proximosr {
+    text-align: center;
 }
 
 .titulo-proximosr span {
     font-style: italic;
 }
 
-.contenedor-proximosr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.recitales {
+    border: 1px solid black;
+    width: 90%;
+    margin: 10px auto;
 }
 
-.contenedor-proximosr a {
+.recitales a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
     text-decoration: none;
 }
 
-.primer-recital {
-    border: 1px solid black;
-    width: 98%;
-    margin-bottom: 10px;
-    grid-area: primer-recital;
-}
-
-.primer-recital a {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.primer-recital p, h4 {
+.recitales p, h4 {
     padding: 5px;
+    text-transform: uppercase;
 }
 
-.segundo-recital {
-    border: 1px solid black;
-    width: 98%;
-    margin-bottom: 10px;
-    grid-area: segundo-recital;
+.contacto-caja {
+    margin: 0px auto; 
+    padding: 1.5rem;
 }
 
-.segundo-recital a {
-    display: flex;
-    justify-content: flex-end;
+.titulo-contacto {
+    text-align: center;
+    font-size: 4rem;
 }
 
-.segundo-recital p, h4 {
-    padding: 5px;
+.contacto-caja {
+    box-shadow: 0 0 15px 0 rgb(255, 255, 255, 4);
+    color: white;
 }
 
-.tercer-recital {
-    border: 1px solid black;
-    width: 98%;
-    margin-bottom: 10px;
-    grid-area: tercer-recital;
+.contact {
+    padding: 1rem;
+    background-color: rgb(63, 63, 63);
 }
 
-.tercer-recital a {
-    display: flex;
-    justify-content: flex-end;
+.contact form {
+    margin: 0;
+    padding: 1rem;
 }
 
-.tercer-recital p, h4 {
-    padding: 5px;
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
 }
 
-.cuarto-recital {
-    border: 1px solid black;
-    width: 98%;
-    margin-bottom: 10px;
-    grid-area: cuarto-recital;
+.contact form button {
+    background: white;
+    color: black;
+    text-transform: uppercase;
 }
 
-.cuarto-recital a {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.cuarto-recital p, h4 {
-    padding: 5px;
-}
-
-.quinto-recital {
-    border: 1px solid black;
-    width: 98%;
-    margin-bottom: 10px;
-    grid-area: quinto-recital;
-}
-
-.quinto-recital a {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.quinto-recital p, h4 {
-    padding: 5px;
-}
-
-.contactanos {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-}
-
-.info-sitio p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.info-sitio {
+    padding: 1rem;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
 }
 
 .footer {
@@ -331,8 +260,6 @@ section#tercera-banda {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 0;
 }
 
 .container-footer {
@@ -365,73 +292,6 @@ section#tercera-banda {
     background-color: black;
 }
 
-/* PRIMER GRID */
-
-#grid-index {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main-info"
-    "imagen-prin"
-    "footer";
-    grid-template-rows: 150px auto auto 100px;
-    grid-template-columns: 100%;
-    grid-row-gap: 5px;
-    width: 100%;
-    height: 100vh;
-    }
-
-
-/* SEGUNDO GRID CON MEDIA QUERIES */
-
-@media screen and (min-width: 768px) {
-    #grid-index {
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main-info"
-        "imagen-prin"
-        "footer";
-    }
-    .logo{
-        font-size: 15px;
-    }
-    .main h3 {
-        display: flex;
-        text-align: center;
-        font-size: 30px;
-        justify-content: center;
-        padding-top: 0px;
-    }    
-    #header {
-        padding: 25px;
-        height: 120px;
-    }
-    .container-footer a {
-        padding: 2px;
-    }
-}
-
-/* TERCER GRID CON MEDIA QUERIES */
-
-@media screen and (min-width: 1200px) {
-    #grid-index {
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "imagen-prin main-info"
-        "footer footer";
-        grid-template-columns: 45% auto;
-        grid-column-gap: 5px;
-    } 
-    .calamaro-imagen {
-        width: 500px;
-        height: auto;
-    }   
-}
-
-/* CUARTO GRID */
-
 #grid-bio {
     display: grid;
     grid-template-areas:
@@ -446,8 +306,6 @@ section#tercera-banda {
     width: 100%;
     height: 100vh; 
 }  
-
-/* QUINTO GRID CON MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
     #grid-bio {
@@ -477,8 +335,6 @@ section#tercera-banda {
 }
 }
 
-/* SEXTO GRID CON MEDIA QUERIES */
-
 @media screen and (min-width: 1200px) {
     #grid-bio {
         display: grid;
@@ -497,21 +353,11 @@ section#tercera-banda {
     }
 }
 
-/* SEPTIMO GRID */
-
-#grid-recitales {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "titulo-recitales"
-    "primer-recital"
-    "segundo-recital"
-    "tercer-recital"
-    "cuarto-recital"
-    "quinto-recital"
-    "footer";
-    grid-template-rows: 150px auto auto auto auto auto auto 100px;
-    grid-row-gap: 5px;
-    width: 100%;
-    height: 100vh;
+@media screen and (max-width: 768px) {
+    #header {
+        height: 250px;
+    }
+    .info-comienzos {
+        margin-top: 85px;
+    }
 }
