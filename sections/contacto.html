@@ -5,25 +5,29 @@
     <meta name="description" content="Contacto con Andres Calamaro">
     <meta name="keywords" content="Andres Calamaro, Contacto, Nombre, Apellido, E-Mail">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e78d1d0e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estilos.css"> 
     <link rel="stylesheet" href="../css/main.css">  
 </head>
    
 <body>
 <div id="wrapper">
-    <header id="header">
-        <div class="container-nav">
-            <a class="logo" href="../index.html">Andrés Calamaro</a>
-            <nav class="navigation">
-               <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="biografia.html">Biografia</a></li>
-                  <li><a href="discografia.html">Discografia</a></li>
-                  <li><a href="recitales.html">Proximos Recitales</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-               </ul>
-            </nav>
-        </div>    
+    <header>
+        <nav class="menu-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="../index.html" class="logo">Andrés Calamaro</a>
+            <ul class="nav-bar">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="discografia.html">Discografia</a></li>
+                <li><a href="recitales.html">Proximos Recitales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="formulario">
@@ -32,23 +36,23 @@
                 <h1 class="titulo-contacto">¡CONTACTANOS!</h1>
                 <form>
                     <p>
-                        <label>Nombre Completo</label>
+                        <label for="name">Nombre Completo</label>
                         <input type="text" name="nombrecompleto">
                     </p>
                     <p>
-                        <label>E-Mail</label>
+                        <label for="email">E-Mail</label>
                         <input type="email" name="e-mail">
                     </p>
                     <p>
-                        <label>Telefono/Celular</label>
+                        <label for="telephone">Telefono/Celular</label>
                         <input type="tel" name="telefono/celular">
                     </p>
                     <p>
-                        <label>Motivo</label>
+                        <label for="text">Motivo</label>
                         <input type="text" name="motivo">
                     </p>
                     <p>
-                        <label>Mensaje</label>
+                        <label for="text">Mensaje</label>
                         <textarea name="mensaje" rows="#"></textarea>
                     </p>
                     <p>

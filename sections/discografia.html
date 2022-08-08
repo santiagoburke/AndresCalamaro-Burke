@@ -9,34 +9,33 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <script src="../bootstrap/js/jquery.slim.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e78d1d0e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estilos.css">
     <link rel="stylesheet" href="../css/main.css"> 
 </head>
    
 <body>
 <div id="wrapper">
-    <div class="container-fluid">
-    <div class="row">       
-    <header id="header">
-        <div class="container-nav">
-            <a class="logo col-6" href="../index.html">Andrés Calamaro</a>
-            <nav class="navigation col-6">
-               <ul>
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="biografia.html">Biografia</a></li>
-                  <li><a href="discografia.html">Discografia</a></li>
-                  <li><a href="recitales.html">Proximos Recitales</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-               </ul>
-            </nav>
-        </div>    
-    </header>
-    </div>
-    </div>
+  <header class="header-disco">
+    <nav class="menu-nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="../index.html" class="logo">Andrés Calamaro</a>
+        <ul class="nav-bar">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="biografia.html">Biografia</a></li>
+          <li><a href="discografia.html">Discografia</a></li>
+          <li><a href="recitales.html">Proximos Recitales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+  </header> 
 
     <div class="container">
-        <div class="row justify-content-center">
-            <img src="https://i.discogs.com/6Ctp_iZ7Q8GnBHyoq52T4BGOZ3PFyIhWR_YHjvLOxlk/rs:fit/g:sm/q:90/h:401/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk4NTc3/MS0xNTY3NTg2MDE4/LTc0MDQuanBlZw.jpeg" class="img-responsive center-block">
+        <div class="imagen-disco" id="imagen-disco">
+            <img src="https://i.discogs.com/6Ctp_iZ7Q8GnBHyoq52T4BGOZ3PFyIhWR_YHjvLOxlk/rs:fit/g:sm/q:90/h:401/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTk4NTc3/MS0xNTY3NTg2MDE4/LTc0MDQuanBlZw.jpeg">
         </div>
     </div>
 
@@ -46,145 +45,203 @@
         </div>
     </section>
 
-<section class="container mt-5">
+<section id="section-disco" class="container mt-5">
     <div class="row">
-        <div class="col-3 col-sm-3 col-md-3 mb-4">
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
             <div class="card">
-                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2018/11/cargar440.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../img/albums/cargarlasuerte.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title text-center">CARGAR LA SUERTE<br>(2018)</h4>
                   <p class="text-center">
-                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Ver album completo
+                    <a class="btn btn-primary" href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi" target="_blank">
+                      Escuchar en Spotify
                     </a>
                   </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
-                            <li class="list-group-item">1. Verdades afiladas</li>
-                            <li class="list-group-item">2. Transito lento</li>
-                            <li class="list-group-item">3. Cuarteles de invierno</li>
-                            <li class="list-group-item">4. Diego Armando canciones</li>
-                            <li class="list-group-item">5. Las rimas</li>
-                            <li class="list-group-item">6. Siete vidas</li>
-                            <li class="list-group-item">7. Mi ranchera</li>
-                            <li class="list-group-item">8. Falso LV</li>
-                            <li class="list-group-item">9. My mafia</li>
-                            <li class="list-group-item"> 10. Adan rechaza</li>
-                            <li class="list-group-item"> 11. Egoistas</li>
-                            <li class="list-group-item">12. Voy a volver</li>
-                          </ul>
-                    </div>
-                  </div>
-                  </a>
                 </div>
               </div> 
         </div>
-        <div class="col-3 col-sm-3 col-md-3 mb-4">
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
             <div class="card">
-                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2017/03/Cy9TRh7XEAE4KD6.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../img/albums/volumen11.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title text-center">VOLUMEN 11<br>(2016)</h4>
                   <p class="text-center">
-                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Ver album completo
+                    <a class="btn btn-primary" href="https://open.spotify.com/album/2WdzGAxZ85LdQC5x0avcyZ" target="_blank">
+                      Escuchar en Spotify
                     </a>
                   </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
-                            <li class="list-group-item">1. Apocalipsis en Malasaña</li>
-                            <li class="list-group-item">1. Frio y barro (segunda parte)</li>
-                            <li class="list-group-item">3. Rock y juventud</li>
-                            <li class="list-group-item">4. Tan triste no es el blues</li>
-                            <li class="list-group-item">5. La noche</li>
-                            <li class="list-group-item">6. Atunes y ballenas</li>
-                            <li class="list-group-item">7. Como el viento voy a ver</li>
-                            <li class="list-group-item">8. Mareo</li>
-                            <li class="list-group-item">9. El huevo y la gallina</li>
-                            <li class="list-group-item"> 10. Blues de Santa Fe</li>
-                            <li class="list-group-item"> 11. Las almas agradecidas</li>
-                            <li class="list-group-item">12. Vampiro torero</li>
-                            <li class="list-group-item">13. Pánico en Benidorm</li>
-                            <li class="list-group-item">14. Cazador de ateos</li>
-                            <li class="list-group-item">15. Hasta el cielo</li>
-                            <li class="list-group-item">16. Blues y orquesta</li>
-                            <li class="list-group-item">17. Que te vaya bonito</li>
-                            <li class="list-group-item">18. Trujillo Libre</li>
-                            <li class="list-group-item">19. La Burra</li>
-                          </ul>
-                    </div>
-                  </div>
-                  </a>
                 </div>
-              </div> 
+            </div> 
         </div>
-        <div class="col-3 col-sm-3 col-md-3 mb-4">
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
             <div class="card">
-                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2013/10/bohemio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../img/albums/bohemio.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title text-center">BOHEMIO<br>(2013)</h4>
                   <p class="text-center">
-                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Ver album completo
+                    <a class="btn btn-primary" href="https://open.spotify.com/album/0rvKuIaaoeOlU1NDBI0EVm?si=768XvvttQY26ZO7-Kh1sbg" target="_blank">
+                      Escuchar en Spotify
                     </a>
                   </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
-                            <li class="list-group-item">1. Belgrano</li>
-                            <li class="list-group-item">2. Cuando no estas </li>
-                            <li class="list-group-item">3. Tantas Veces </li>
-                            <li class="list-group-item">4. Rehenes</li>
-                            <li class="list-group-item">5. Nacimos para correr</li>
-                            <li class="list-group-item">6. Bohemio</li>
-                            <li class="list-group-item">7. Plástico fino</li>
-                            <li class="list-group-item">8. Inexplicable </li>
-                            <li class="list-group-item">9. Dentro de una cancion </li>
-                            <li class="list-group-item">10. Doce pasos</li>
-                          </ul>
-                    </div>
-                  </div>
-                  </a>
                 </div>
-              </div> 
+            </div> 
         </div>
-        <div class="col-3 col-sm-3 col-md-3 mb-4">
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
             <div class="card">
-                <img class="card-img-top" src="https://www.calamaro.com/wp-content/uploads/2013/10/ontherock2010.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../img/albums/ontherock2010.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title text-center">ON THE ROCK<br>(2010)</h4>
                   <p class="text-center">
-                    <a class="btn btn-primary" type="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Ver album completo
+                    <a class="btn btn-primary" href="https://open.spotify.com/album/6LC8ptXigkd1axeNCKryIm?si=bDUIGYlUQyq9lpCwz4KRNA" target="_blank">
+                      Escuchar en Spotify
                     </a>
                   </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item text-center"> <a href="https://open.spotify.com/album/65V3lqpW3LBZTmlFsX33fi?si=pk6JXze5Sa2Ie4A8vzZpvQ" target="_blank">Escuchar en Spotify</a></li>
-                            <li class="list-group-item">1. Barcos </li>
-                            <li class="list-group-item">2. Te extraño </li>
-                            <li class="list-group-item">3. El pasodoble de los amigos ausentes </li>
-                            <li class="list-group-item">4. Todos se van </li>
-                            <li class="list-group-item">5. Los divinos </li>
-                            <li class="list-group-item">6. Flor de Samurai </li>
-                            <li class="list-group-item">7. Insoportablemente cruel </li>
-                            <li class="list-group-item">8. Tres Marias </li>
-                            <li class="list-group-item">9. Te solté la rienda </li>
-                            <li class="list-group-item">10. Me envenenaste </li>
-                            <li class="list-group-item">11. Gomontonera </li>
-                            <li class="list-group-item">12. El perro</li>
-                          </ul>
-                    </div>
-                  </div>
-                  </a>
                 </div>
-              </div> 
+            </div> 
         </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
+          <div class="card">
+              <img class="card-img-top" src="../img/albums/lalenguapopular2007.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title text-center">LA LENGUA POPULAR<br>(2007)</h4>
+                <p class="text-center">
+                  <a class="btn btn-primary" href="https://open.spotify.com/album/5MQ7xWpg5tP0uebwdcdyYk?si=URwzYh0uQCCfs9WNNwrocg" target="_blank">
+                    Escuchar en Spotify
+                  </a>
+                </p>
+              </div>
+          </div> 
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 mb-4">
+        <div class="card">
+            <img class="card-img-top" src="../img/albums/elpalaciodelasflores2006.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">EL PALACIO DE LAS FLORES<br>(2006)</h4>
+              <p class="text-center">
+                <a class="btn btn-primary" href="https://open.spotify.com/album/5AeKNE9h7MfjCFY0llkDmg?si=WaKpCEavSFqJbPxvGz2s7Q" target="_blank">
+                  Escuchar en Spotify
+                </a>
+              </p>
+            </div>
+        </div> 
+    </div>
+    <div class="col-6 col-sm-4 col-md-3 mb-4">
+      <div class="card">
+          <img class="card-img-top" src="../img/albums/tintaroja2006.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">TINTA ROJA<br>(2006)</h4>
+            <p class="text-center">
+              <a class="btn btn-primary" href="https://open.spotify.com/album/69WRi5hgYF8knlDJmBStHS?si=jxQyiczNRfyy7fVOe_Frlw" target="_blank">
+                Escuchar en Spotify
+              </a>
+            </p>
+          </div>
+      </div> 
+  </div>
+  <div class="col-6 col-sm-4 col-md-3 mb-4">
+    <div class="card">
+        <img class="card-img-top" src="../img/albums/elcantante2004.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">EL CANTANTE<br>(2004)</h4>
+          <p class="text-center">
+            <a class="btn btn-primary" href="https://open.spotify.com/album/6JijxAUaS8ng8YfFxQYoWr?si=n4N41Xj3T6W3Ct253fVoMA" target="_blank">
+              Escuchar en Spotify
+            </a>
+          </p>
+        </div>
+    </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/elsalmon2000-negro.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">EL SALMON<br>(2000)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/4RIaQpC5NYL7PwOcdKN8ij?si=DyzR-IH3SPeVV-Jx7s1snQ" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/honestidadbrutal1999.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">HONESTIDAD BRUTAL<br>(1999)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/4OZincs6XqlfEuKEFtpq1Y?si=1fyX0pIpQIO0mEO64NsgfQ" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/altasuciedad1997.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">ALTA SUCIEDAD<br>(1997)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/44D07i1Lk0zFtWHRARMih6?si=_3E3hyvXTWSBdTTc48Afmg" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/nadiesalevivodeaqui2003.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">NADIE SALE VIVO DE AQUI<br>(1989)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/5S0820c1RDZbzf6F0mHTXC?si=w4UTwaK4SxmsBULh_TtoYg" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/pormirarte2003.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">POR MIRARTE<br>(1988)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/7BJLLhasyY57nlEIUpXx0x?si=WMI4XASsQcqebP5FX3zS3w" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/vidacruel2006.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">VIDA CRUEL<br>(1985)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/0WU2FsDLrt5y7eKPOUpY0F?si=A00_AtE-SwGmibgt67-9nw" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
+<div class="col-6 col-sm-4 col-md-3 mb-4">
+  <div class="card">
+      <img class="card-img-top" src="../img/albums/hotelcalamaro2004.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title text-center">HOTEL CALAMARO<br>(1984)</h4>
+        <p class="text-center">
+          <a class="btn btn-primary" href="https://open.spotify.com/album/0c6JP1TSyTzvOtgWQykE01?si=RBRT626kTEaYXlwGOfyAEg" target="_blank">
+            Escuchar en Spotify
+          </a>
+        </p>
+      </div>
+  </div> 
+</div>
     </div>
 </section>
 
